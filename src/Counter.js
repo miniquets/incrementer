@@ -10,13 +10,13 @@ class Counter extends Component {
 
     increment = () => {
         this.setState({
-            count: this.state.count + 1
+            count: this.state.count + this.props.currentValue
         });
     };
 
     decrement = () => {
         this.setState({
-            count: this.state.count - 1
+            count: this.state.count - this.props.currentValue
         });
     };
 
